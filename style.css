@@ -1,5 +1,6 @@
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@200;300;400&display=swap');
 
 * {
   margin: 0;
@@ -29,6 +30,7 @@ body {
 .header a {
   text-decoration: none;
   color: black;
+  font-family: 'Hepta Slab', serif;
   font-weight: 700;
 }
 .header ul {
@@ -182,14 +184,68 @@ body {
   height: 100%;
   display: flex;
   justify-content:flex-start;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
 .section h1 {
-  font-family: "Titillium Web", serif;
+  font-family: 'Hepta Slab', serif;
   font-size: 6rem;
+  letter-spacing: 10px;
   font-weight: 700;
   line-height: 6vw;
   color:white;
   text-transform: uppercase;
+}
+
+.main h1{
+  margin: 25px;
+  margin-left: 200px;
+  padding: 10px;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  justify-content:flex-start;
+}
+.main h3{
+font-size: 20px;
+margin: 15px 50px 35px 50px;
+text-align:justify;
+}
+.galeria .container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3,1fr);
+gap: 10px;
+margin: 15px;
+}
+.galeria img{
+width:100%;
+height:500px;
+object-fit: cover;
+
+}
+.item1{
+grid-column: 1/4;
+
+}
+.item5{
+grid-column: 1/3;
+}
+.item11{
+grid-column: 2/4;
+}
+.item12{
+grid-column: 1/4;
+}
+footer {
+width: 100%;
+height: 10vh;
+background: black;
+color: white;
+}
+footer p{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
 }
